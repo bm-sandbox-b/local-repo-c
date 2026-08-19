@@ -78,7 +78,7 @@ test('a long row is reported with its line number', () => {
 })
 
 test('an empty file is no columns and no records', () => {
-  assert.deepStrictEqual(toRecords(parse('')), { columns: [], records: [] })
+  assert.deepStrictEqual(toRecords(parse('')), { columns: [], records: [], problems: [] })
 })
 
 test('a header with no rows under it is still a header', () => {
