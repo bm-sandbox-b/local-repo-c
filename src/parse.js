@@ -63,7 +63,7 @@ function parse (text) {
 // nobody. A LONG row is a different thing -- it means the header and the data
 // disagree about the shape -- so it is reported.
 function toRecords (rows) {
-  if (rows.length === 0) return { columns: [], records: [] }
+  if (rows.length === 0) return { columns: [], records: [], problems: [] }
 
   const columns = rows[0]
   const records = []
